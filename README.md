@@ -50,12 +50,12 @@ Install necessary libraries in the Arduino IDE:
 - Alerts: The system will notify you of unauthorized access attempts.
 - Configuration
 
-##Troubleshooting
-Problem: The buzzer keeps beeping non-stop.
-Solution: Check the distance threshold setting and ensure the IR code is correctly entered.
+## Troubleshooting
+# Problem: The buzzer keeps beeping non-stop.
+- Solution: Check the distance threshold setting and ensure the IR code is correctly entered.
 
-Problem: No response from the LCD.
-Solution: Verify the wiring and ensure the correct pins are used.
+# Problem: No response from the LCD.
+- Solution: Verify the wiring and ensure the correct pins are used.
 
 ## Future Improvements
 - Add support for RFID authentication.
