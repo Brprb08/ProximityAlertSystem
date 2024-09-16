@@ -36,7 +36,7 @@ Install necessary libraries in the Arduino IDE:
 - Ultrasonic
 
 ## Wiring Diagram
-- COMING SOON
+![Wiring Diagram](images/wiringDiagram.png)
 
 ## How It Works
 - The ultrasonic sensor detects when someone approaches the door.
