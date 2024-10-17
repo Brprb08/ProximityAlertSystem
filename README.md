@@ -56,15 +56,3 @@ Install necessary libraries in the Arduino IDE:
 
 ### Problem: No response from the LCD.
 - Solution: Verify the wiring and ensure the correct pins are used.
-
-## Future Improvements
-- Add support for RFID authentication.
-- Implement remote monitoring via Bluetooth or Wi-Fi.
-- Integrate additional sensors for enhanced security.
-
-##Contributing
-If you'd like to contribute to this project, please fork the repository and submit a pull request.
-
-## Acknowledgements
-Thanks to the Arduino community for resources and support.
-IRremote library by Ken Shirriff.
