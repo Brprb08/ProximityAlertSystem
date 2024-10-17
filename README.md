@@ -1,5 +1,5 @@
 # ProximityAlertSystem
-A small scale smart access control and proximity alert system using Arduino, featuring ultrasonic distance sensing, IR remote authentication, and real-time notifications on an LCD screen. This project was used to introduce me to embedded systems as well as working a bit with mixing hardware and software. I also wanted to utilize FreeRTOS to gain experience, even though it's not entirenly necessary for a project like this.
+A small scale smart access control and proximity alert system using Arduino, featuring ultrasonic distance sensing, IR remote authentication, and real-time notifications on an LCD screen. This project was used to introduce me to embedded systems as well as working a bit with mixing hardware and software. I also wanted to utilize FreeRTOS to gain experience, even though it's not necessary for a project like this.
 
 ## Features
 - Ultrasonic sensor for detecting proximity and triggering alerts.
