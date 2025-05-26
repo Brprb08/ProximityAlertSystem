@@ -1,58 +1,72 @@
-# ProximityAlertSystem
-A small scale smart access control and proximity alert system using Arduino, featuring ultrasonic distance sensing, IR remote authentication, and real-time notifications on an LCD screen. This project was used to introduce me to embedded systems as well as working a bit with mixing hardware and software. I also wanted to utilize FreeRTOS to gain experience, even though it's not necessary for a project like this.
+# Proximity Alert System
+
+A small embedded access control system built with Arduino. This project integrates multiple hardware components—including an ultrasonic sensor, IR remote, and LCD screen—to detect motion, authenticate users, and trigger alerts. It was developed to explore embedded systems, sensor integration, and basic RTOS usage on microcontrollers.
+
+---
 
 ## Features
-- Ultrasonic sensor for detecting proximity and triggering alerts.
-- IR remote control for user authentication.
-- Real-time data display on an LCD screen.
-- Buzzer and LED alerts based on proximity and authentication status.
 
-## Components Used
-- Arduino Uno R3
-- Ultrasonic Sensor (HC-SR04)
-- IR Receiver Module
-- LCD Screen (16x2)
-- Buzzer
-- LEDs
-- 5V Relay Module (if applicable)
-- Stepper Motor (if applicable)
-- Servo Motor (if applicable)
+- Ultrasonic proximity detection with adjustable threshold  
+- IR remote-based authentication  
+- Real-time status display on 16x2 LCD  
+- Buzzer and LED alerts based on access status  
+- FreeRTOS-based task scheduling (used for experience and practice)
 
-## Getting Started
+---
 
-### Prerequisites
-- Arduino IDE installed
-- Git installed for version control
+## Hardware Components
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Brprb08/ProximityAlertSystem.git
-Open the .ino file in the Arduino IDE.
-Install necessary libraries in the Arduino IDE:
-- LiquidCrystal
-- FreeRTOS
-- IRremote
-- Ultrasonic
+- Arduino Uno R3  
+- HC-SR04 Ultrasonic Sensor  
+- IR Receiver Module  
+- 16x2 LCD (LiquidCrystal)  
+- Buzzer  
+- LEDs  
+- Optional: 5V Relay, Stepper or Servo Motor
+
+---
+
+## System Behavior
+
+- Detects motion using ultrasonic sensor  
+- Triggers alert if an unauthorized approach is detected  
+- Allows access when user authenticates using IR remote  
+- LCD displays real-time system status and feedback
+
+---
+
+## Project Notes
+
+This was an exploratory project to get hands-on with embedded hardware and experiment with FreeRTOS. While the task complexity did not require an RTOS, incorporating it provided useful experience in task structuring, preemption, and timing management in constrained environments.
+
+---
+
+## Repo Structure
+
+// 
+ProximityAlertSystem/
+├── ProximityAlertSystem.ino         # Main Arduino sketch
+├── images/
+│   └── wiringDiagram.png            # Wiring schematic
+├── README.md
+//
+
+---
 
 ## Wiring Diagram
+
+// 
 ![Wiring Diagram](images/wiringDiagram.png)
+//
 
-## How It Works
-- The ultrasonic sensor detects when someone approaches the door.
-- A buzzer alerts if an unauthorized person is detected.
-- The user can authenticate using an IR remote control.
-- Successful authentication stops the buzzer and allows access.
-
-## Usage
-- Power On: Connect the Arduino to a power source via USB or battery.
-- Authentication: Use the IR remote to enter the access code displayed on the LCD.
-- Alerts: The system will notify you of unauthorized access attempts.
-- Configuration
+---
 
 ## Troubleshooting
-### Problem: The buzzer keeps beeping non-stop.
-- Solution: Check the distance threshold setting and ensure the IR code is correctly entered.
 
-### Problem: No response from the LCD.
-- Solution: Verify the wiring and ensure the correct pins are used.
+**Buzzer won't stop beeping**  
+- Check the distance threshold setting  
+- Confirm correct IR code is being received
+
+**LCD not displaying anything**  
+- Verify wiring and LCD pin connections  
+- Ensure `LiquidCrystal` library is correctly initialized
