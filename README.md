@@ -43,21 +43,19 @@ This was an exploratory project to get hands-on with embedded hardware and exper
 
 ## Repo Structure
 
-// 
+```
 ProximityAlertSystem/
 ├── ProximityAlertSystem.ino         # Main Arduino sketch
 ├── images/
 │   └── wiringDiagram.png            # Wiring schematic
 ├── README.md
-//
+```
 
 ---
 
 ## Wiring Diagram
 
-// 
 ![Wiring Diagram](images/wiringDiagram.png)
-//
 
 ---
 
